@@ -1,0 +1,299 @@
+data:
+  url:
+    root: http://localhost:3000/checker/
+    option: http://localhost:3000/checker/option?id=%E3%82%A8%E3%82%B9%E3%83%BB%E3%82%B8%E3%83%BC%E3%83%BB%E3%82%A2%E3%82%A4%E3%83%BB%E3%82%B7%E3%83%BC%E3%83%90%E3%83%B3%E3%82%AF%E3%83%BC%E3%83%90%E3%83%BC%E6%A0%A1_%E8%A6%B3%E5%85%89_%E3%83%AF%E3%83%BC%E3%82%AD%E3%83%B3%E3%82%B0%E3%83%9B%E3%83%AA%E3%83%87%E3%83%BC_%E3%83%90%E3%83%B3%E3%82%AF%E3%83%BC%E3%83%90%E3%83%BC_IntensiveEnglishProgram_%E3%83%A2%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0_%E3%83%95%E3%83%AB%E3%82%BF%E3%82%A4%E3%83%A0_18.75_10&country=%E3%82%AB%E3%83%8A%E3%83%80&area=%E3%83%90%E3%83%B3%E3%82%AF%E3%83%BC%E3%83%90%E3%83%BC&week=10&visa=%E8%A6%B3%E5%85%89&timetable=&sort=&school=
+  form:
+    quotation:
+      option:
+        stay:
+          id: select-a
+          text: Aを選択する
+    success:
+      set:
+        text:
+          name:
+            name: name
+            text: 'てすと てすと'
+          kana:
+            name: kana
+            text: 'テスト テスト'
+          emal:
+            name: emal
+            text: 'test@test.com'
+          phone:
+            name: phone
+            text: '0123456789'
+        option:
+          way:
+            name: way
+            text: 'スカイプ'
+          age:
+            name: age
+            text: '20'
+          prefecture:
+            name: prefecture
+            text: '東京都'
+    test_case01:
+      set:
+        text:
+          name:
+            name: name
+            text: ''
+          kana:
+            name: kana
+            text: ''
+          emal:
+            name: email
+            text: ''
+          phone:
+            name: phone
+            text: ''
+          others:
+            name: comment
+            text: ''
+        check:
+          counselings:
+            id: counseling
+            values: ['学校に通う期間', '滞在方法', '渡航時期', '滞在期間', '留学前の手続き', '他の留学プランとの比較', '留学費用', '申込方法','留学中のトラブル']
+        option:
+          way:
+            name: way
+            text: 'ZOOM'
+            values: ['ZOOM', '電話', '来店', 'スカイプ']
+          age:
+            name: age
+            text: '1'
+            values: ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99',]
+          prefecture:
+            name: prefecture
+            text: '北海道'
+            values: ['北海道','青森県','岩手県','宮城県','秋田県', '山形県', '福島県', '茨城県', '栃木県', '群馬県', '埼玉県', '千葉県', '東京都', '神奈川県', '新潟県', '富山県', '石川県', '福井県', '山梨県', '長野県', '岐阜県', '静岡県', '愛知県', '三重県', '滋賀県', '京都府', '大阪府', '兵庫県', '奈良県', '和歌山県', '鳥取県', '島根県', '岡山県', '広島県', '山口県', '徳島県', '香川県', '愛媛県', '高知県', '福岡県', '佐賀県', '長崎県', '熊本県', '大分県', '宮崎県', '鹿児島県', '沖縄県', '海外']
+        radio:
+          agree:
+            name: agreement_panel-btn
+    test_case02:
+      set:
+        name: name
+        text: 'テスト[@]テスト'
+      msg: '名前は全角ひらがな・カタカナ・漢字で入力してください'
+    test_case03:
+      set:
+        name: kana
+        text: 'てすと　てすと'
+      msg: 'フリガナは全角カタカナで入力してください'
+    test_case04:
+      set:
+        name: email
+        text: 'mAilめ0@test.jp1'
+      msg: '正しいメールアドレスを入力してください'
+    test_case05:
+      set:
+        name: phone
+        text: '0+90<123>井456 &%'
+      msg: '正しい電話番号を入力してください'
+    test_case06:
+      set:
+        name: name
+      msg: '入力してください'
+    test_case07:
+      set:
+        name: kana
+      msg: '入力してください'
+    test_case08:
+      set:
+        name: email
+      msg: '入力してください'
+    test_case09:
+      set:
+        name: phone
+      msg: '入力してください'
+    test_case10:
+      set:
+        name: email
+        text: 't@co.jp'
+      msg: 'Emailは10文字以上で入力してください'
+    test_case11:
+      set:
+        name: phone
+        text: '090000000'
+      msg: '電話番号は10文字以上で入力してください'
+    test_case12:
+      set:
+        name: name
+        text: 'あ'
+      msg: '入力済'
+    test_case13:
+      set:
+        name: kana
+        text: 'ア'
+      msg: '入力済'
+    test_case14:
+      set:
+        name: email
+        text: 'sample@test.com'
+      msg: '入力済'
+    test_case15:
+      set:
+        name: phone
+        text: '08000000000'
+      msg: '入力済'
+    test_case16:
+      set:
+        name: name
+        text: 'あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやいゆえよらりるれろわゐうゑをん'
+      msg: '名前は50文字以内にしてください'
+    test_case17:
+      set:
+        name: kana
+        text: 'アイウエオカキケケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤイユエヨラリルレロワイウルヲン'
+      msg: 'フリガナは50文字以内にしてください'
+    test_case18:
+      set:
+        name: email
+        text: 'samplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesa@test.com'
+      msg: 'Emailは256文字以内にしてください'
+    test_case19:
+      set:
+        name: phone
+        text: '0800000000000000'
+      msg: '電話番号は15文字以内にしてください'
+    test_case20:
+      set:
+        name: name
+        text: 'あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやいゆえよらりるれろわゐうゑを'
+      msg: '入力済'
+    test_case21:
+      set:
+        name: kana
+        text: 'アイウエオカキケケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤイユエヨラリルレロワイウルヲ'
+      msg: '入力済'
+    test_case22:
+      set:
+        name: email
+        text: 'samplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamplesamples@test.com'
+      msg: '入力済'
+    test_case23:
+      set:
+        name: phone
+        text: '080000000000000'
+      msg: '入力済'
+    test_case24:
+      set:
+        name: email
+        text: "<script>alert('Bug');</script>"
+      msg: '正しいメールアドレスを入力してください'
+    test_case25:
+      set:
+        name: email
+        text: '<input type="text" name="test" value="aaa”>'
+      msg: '正しいメールアドレスを入力してください'
+    test_case26:
+      set:
+        name: email
+        text: '&lt;&copy;&amp;'
+      msg: '正しいメールアドレスを入力してください'
+    test_case27:
+      set:
+        name: email
+        text: ';delete from user_table;'
+      msg: '正しいメールアドレスを入力してください'
+    test_case28:
+      set:
+        text:
+          name:
+            name: name
+            text: 'てすと てすと'
+          kana:
+            name: kana
+            text: 'テスト テスト'
+          emal:
+            name: email
+            text: 'test@test.com'
+        option:
+          way:
+            name: way
+            text: 'スカイプ'
+          age:
+            name: age
+            text: '20'
+          prefecture:
+            name: prefecture
+            text: '東京都'
+    test_case29:
+      set:
+        text:
+          name:
+            name: name
+            text: 'てすと てすと'
+          kana:
+            name: kana
+            text: 'テスト テスト'
+          emal:
+            name: email
+            text: 'test@test.com'
+          phone:
+            name: phone
+            text: '012345678aaaa'
+        option:
+          way:
+            name: way
+            text: 'スカイプ'
+          age:
+            name: age
+            text: '20'
+          prefecture:
+            name: prefecture
+            text: '東京都'
+    test_case30:
+      set:
+        text:
+          name:
+            name: name
+            text: 'てすと てすと'
+          kana:
+            name: kana
+            text: 'テスト テスト'
+          emal:
+            name: email
+            text: 'test@test.com'
+          phone:
+            name: phone
+            text: '0123456789'
+        option:
+          way:
+            name: way
+            text: 'スカイプ'
+          age:
+            name: age
+            text: '20'
+          prefecture:
+            name: prefecture
+            text: '東京都'
+        radio:
+          agree:
+            class: agreement_panel-btn
+    test_case31:
+      set:
+        text:
+          name:
+            name: name
+            text: 'てすと てすと'
+          kana:
+            name: kana
+            text: 'テスト テスト'
+          emal:
+            name: email
+            text: 'test@test.com'
+          phone:
+            name: phone
+            text: '0123456789'
+        option:
+          way:
+            name: way
+            text: 'スカイプ'
+          age:
+            name: age
+            text: '20'
+          prefecture:
+            name: prefecture
+            text: '東京都'
