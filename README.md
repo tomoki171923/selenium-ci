@@ -28,12 +28,12 @@ conda install pyyaml
 
 ### 1. prepare test data
 
-you need to prepare your test data in mockdata folder.
+you need to prepare your test data in the mockdata folder.
 (reference. mockdata/case1_sample.yml)
 
 ### 2. code unittest
 
-you need to code your unit test code in the root.
+you need to prepare your unit test code in the root folder.
 you can use functions of src/common/selenium.py
 (reference. case1_sample.py)
 
@@ -46,7 +46,7 @@ python3 ./case1_sample.py -v
 
 ### 4. check your log
 
-check your test log in log folder.
+check your test log in the log folder.
 
 the following is sample.
 log/seleniumci_20200925_054618_case1_sample/case1_sample.log
